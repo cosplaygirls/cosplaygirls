@@ -4,6 +4,6 @@ export const socialsTypes = {
   redddit: 'https://reddit.com/r/',
   twitter: 'https://twitter.com/',
   facebook: 'https://facebook.com/',
-  vk: 'https://vk.com/',
   website: '',
+  vk: 'https://vk.com/',
 };
