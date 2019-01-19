@@ -30,37 +30,51 @@ class App extends Component {
                 <td>{cosplayer.nickname}</td>
                 <td>{cosplayer.name}</td>
                 <td>
-                  <a href={`${urls.instargram}${cosplayer.instagram}`}>
-                    {cosplayer.instagram}
-                  </a>
+                  {cosplayer.instagram && (
+                    <a href={`${urls.instargram}${cosplayer.instagram}`}>
+                      {cosplayer.instagram}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.patreon}${cosplayer.patreon}`}>
-                    {cosplayer.patreon}
-                  </a>
+                  {cosplayer.patreon && (
+                    <a href={`${urls.patreon}${cosplayer.patreon}`}>
+                      {cosplayer.patreon}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.reddit}${cosplayer.reddit}`}>
-                    {cosplayer.reddit}
-                  </a>
+                  {cosplayer.reddit && (
+                    <a href={`${urls.reddit}${cosplayer.reddit}`}>
+                      {cosplayer.reddit}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.twitter}${cosplayer.twitter}`}>
-                    {cosplayer.twitter}
-                  </a>
+                  {cosplayer.twitter && (
+                    <a href={`${urls.twitter}${cosplayer.twitter}`}>
+                      {cosplayer.twitter}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.facebook}${cosplayer.facebook}`}>
-                    {cosplayer.facebook}
-                  </a>
+                  {cosplayer.facebook && (
+                    <a href={`${urls.facebook}${cosplayer.facebook}`}>
+                      {cosplayer.facebook}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.website}${cosplayer.website}`}>
-                    {cosplayer.website}
-                  </a>
+                  {cosplayer.website && (
+                    <a href={`${urls.website}${cosplayer.website}`}>
+                      {cosplayer.website}
+                    </a>
+                  )}
                 </td>
                 <td>
-                  <a href={`${urls.vk}${cosplayer.vk}`}>{cosplayer.vk}</a>
+                  {cosplayer.vk && (
+                    <a href={`${urls.vk}${cosplayer.vk}`}>{cosplayer.vk}</a>
+                  )}
                 </td>
               </tr>
             ))}

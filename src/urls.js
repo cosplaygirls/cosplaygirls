@@ -4,5 +4,5 @@ export const urls = {
   redddit: 'https://reddit.com/r/',
   twitter: 'https://twitter.com/',
   facebook: 'https://facebook.com/',
-  vk: 'https://vk.com',
+  vk: 'https://vk.com/',
 };
