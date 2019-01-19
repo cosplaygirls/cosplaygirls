@@ -1,25 +1,42 @@
-# - origin:
-#   nickname:
-#   name:
-#   instagram:
-#   patreon:
-#   reddit:
-#   twitter:
-#   facebook:
-#   website:
-#   vk:
+- origin:
+  nickname:
+  name:
+  socials:
+    - type: instagram
+      id:
+    - type: patreon
+      id:
+    - type: reddit
+      id:
+    - type: twitter
+      id:
+    - type: facebook
+      id:
+    - type: website
+      id:
+    - type: vk
+      id:
 
 - origin: ru
   nickname: Oichi
   name: Вера Андреева
-  instagram: oichichan
-  patreon: oichi
-  vk: lady_oichi
+  socials:
+    - type: instagram
+      id: oichichan
+    - type: patreon
+      id: oichi
+    - type: vk
+      id: lady_oichi
 
 - nickname: Non
-  website: http://nonsummerjack.com/
+  socials:
+    - type: website
+      id: http://nonsummerjack.com/
 
 - origin: ru
   nickname: Helen Stifler
-  instagram: helenstifler
-  patreon: helenstifler
+  socials:
+    - type: instagram
+      id: helenstifler
+    - type: patreon
+      id: helenstifler
