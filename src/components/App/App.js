@@ -13,7 +13,7 @@ export class App extends React.PureComponent {
   }
 
   componentDidMount() {
-    fetch('/.netlify/functions/cosplaygirls')
+    fetch('/cosplaygirls.json')
       .then(response => response.json())
       .then(data => {
         const [fieldsObject, ...cosplaygirls] = data;
@@ -22,8 +22,7 @@ export class App extends React.PureComponent {
           cosplaygirls,
           fields,
         });
-      })
-      .catch(() => {});
+      });
   }
 
   render() {
