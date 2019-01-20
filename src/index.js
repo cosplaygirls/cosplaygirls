@@ -5,9 +5,10 @@ import data from './cosplaygirls.json';
 import './css/index.css';
 import './css/noramalize.css';
 import * as serviceWorker from './serviceWorker';
-import { socialsTypes } from './socialsTypes.js';
+import { socialsTypes } from './const.js';
 
-const [fields, ...cosplaygirls] = data;
+const [fieldsObject, ...cosplaygirls] = data;
+const fields = Object.keys(fieldsObject);
 
 ReactDOM.render(
   <App

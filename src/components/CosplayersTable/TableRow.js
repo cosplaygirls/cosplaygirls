@@ -3,18 +3,46 @@ import { TableDataSimple } from './TableDataSimple.js';
 import { TableDataSocial } from './TableDataSocial.js';
 
 export const TableRow = memo(({ cosplayer, socialsTypes }) => {
-  const { origin, nickname, name, socials } = cosplayer;
+  const {
+    origin,
+    nickname,
+    name,
+    instagram,
+    patreon,
+    reddit,
+    twitter,
+    facebook,
+    website,
+    vk,
+  } = cosplayer;
+
   return (
     <tr>
       <TableDataSimple text={origin} />
       <TableDataSimple text={nickname} />
       <TableDataSimple text={name} />
-      {Object.keys(socialsTypes).map(type => {
-        const index = socials.findIndex(social => social.type === type);
-        const id = socials[index] && socials[index].id;
-        const url = `${socialsTypes[type]}${id}`;
-        return <TableDataSocial key={`${type}${id}`} text={id} url={url} />;
-      })}
+      <TableDataSocial
+        text={instagram}
+        url={`${socialsTypes.instagram}${instagram}`}
+      />
+      <TableDataSocial
+        text={patreon}
+        url={`${socialsTypes.patreon}${patreon}`}
+      />
+      <TableDataSocial text={reddit} url={`${socialsTypes.reddit}${reddit}`} />
+      <TableDataSocial
+        text={twitter}
+        url={`${socialsTypes.twitter}${twitter}`}
+      />
+      <TableDataSocial
+        text={facebook}
+        url={`${socialsTypes.facebook}${facebook}`}
+      />
+      <TableDataSocial text={vk} url={`${socialsTypes.vk}${vk}`} />
+      <TableDataSocial
+        text={website}
+        url={`${socialsTypes.website}${website}`}
+      />
     </tr>
   );
 });

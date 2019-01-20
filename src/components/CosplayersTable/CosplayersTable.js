@@ -5,9 +5,11 @@ import { TableBody } from './TableBody.js';
 
 export const CosplayersTable = React.memo(
   ({ cosplaygirls, fields, socialsTypes }) => (
-    <table className={styles.cpgTabel}>
-      <TableHead fields={fields} />
-      <TableBody cosplaygirls={cosplaygirls} socialsTypes={socialsTypes} />
-    </table>
+    <div className={styles.overflow}>
+      <table className={styles.cpgTabel}>
+        <TableHead fields={fields} />
+        <TableBody cosplaygirls={cosplaygirls} socialsTypes={socialsTypes} />
+      </table>
+    </div>
   )
 );
